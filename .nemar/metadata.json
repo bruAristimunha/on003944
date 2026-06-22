@@ -1,29 +1,80 @@
 {
   "version": "2.0",
-  "dataset_id": "on003944",
-  "source": "openneuro",
-  "source_id": "ds003944",
+  "pipeline_stage": "enriched",
   "title": "EEG: First Episode Psychosis vs. Control Resting Task 1",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Dean Salisbury": {},
     "Dylan Seebold": {},
     "Brian Coffman": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003944.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003944",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003944",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.bpsc.2020.07.013",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v1.6.0",
-  "recording_modality": [
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr"
+  ],
+  "description": "This dataset comprises resting-state EEG recordings from individuals with first-episode psychosis and healthy controls, collected using a 60-channel 10-10 montage system. The first of two independently collected samples, it includes comprehensive clinical assessments covering psychiatric symptoms, cognitive function, and socioeconomic status. This resource enables investigation of cortical network abnormalities and neurophysiological markers associated with early psychotic illness.",
+  "methods_description": "Resting EEG data were recorded for 5 minutes using an Elekta Neuromag Vectorview system with a low-impedance 60-channel 10-10 system cap. Clinical assessments included BPRS, SANS, SAPS, GAF, SFS, MATRICS, WASI, Hollingshead Index, and medication chlorpromazine equivalency. This is the first of two independently collected samples; some subjects from the second acquisition were included due to use of the same montage.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "first-episode psychosis"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "cortical networks"
+    },
+    {
+      "term": "schizophrenia spectrum"
+    },
+    {
+      "term": "alpha oscillations"
+    },
+    {
+      "term": "clinical assessment"
+    },
+    {
+      "term": "healthy controls"
+    },
+    {
+      "term": "neurophysiology"
+    }
+  ],
+  "source_hash": "8aff6e2dd73c38088d9ed7d8a40c7d288378e62a8d6121e85a9d1b017106ab05"
 }
