@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG: First Episode Psychosis vs. Control Resting Task 1",
+  "description": "This dataset comprises resting-state EEG recordings from individuals with first-episode psychosis (FEP) and healthy controls, collected using a 60-channel 10-10 system montage. The first of two independently collected samples, it includes 5-minute resting EEG acquisitions obtained with an Elekta Neuromag Vectorview system. Comprehensive clinical assessments are provided, including psychiatric rating scales (BPRS, SANS, SAPS), cognitive batteries (MATRICS, WASI), and functional measures (GAF, SFS), enabling investigation of neurophysiological abnormalities in early psychosis.",
+  "methods_description": "Resting-state EEG was recorded for 5 minutes using an Elekta Neuromag Vectorview system with a low-impedance 60-channel 10-10 system electrode cap. Clinical assessments included Brief Psychiatric Rating Scale (BPRS), Scale for Assessment of Negative Symptoms (SANS), Scale for Assessment of Positive Symptoms (SAPS), Global Assessment of Functioning (GAF), Social Functioning Scale (SFS), MATRICS Consensus Cognitive Battery, Wechsler Abbreviated Scale of Intelligence (WASI), Hollingshead Four-Factor Index of Socioeconomic Status, and medication chlorpromazine equivalency.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,27 @@
     "Dylan Seebold": {},
     "Brian Coffman": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003944.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "first-episode psychosis"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "schizophrenia spectrum"
+    },
+    {
+      "term": "cortical networks"
+    },
+    {
+      "term": "clinical neurophysiology"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003944",
       "identifier_type": "URL",
@@ -29,52 +46,27 @@
       "identifier": "10.1016/j.bpsc.2020.07.013",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003944.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "6.6 GB (165 files)"
   ],
   "formats": [
     ".eeg",
     ".json",
     ".md",
     ".tsv",
-    ".vhdr"
+    ".vhdr",
+    ".yml"
   ],
-  "description": "This dataset comprises resting-state EEG recordings from individuals with first-episode psychosis and healthy controls, collected using a 60-channel 10-10 montage system. The first of two independently collected samples, it includes comprehensive clinical assessments covering psychiatric symptoms, cognitive function, and socioeconomic status. This resource enables investigation of cortical network abnormalities and neurophysiological markers associated with early psychotic illness.",
-  "methods_description": "Resting EEG data were recorded for 5 minutes using an Elekta Neuromag Vectorview system with a low-impedance 60-channel 10-10 system cap. Clinical assessments included BPRS, SANS, SAPS, GAF, SFS, MATRICS, WASI, Hollingshead Index, and medication chlorpromazine equivalency. This is the first of two independently collected samples; some subjects from the second acquisition were included due to use of the same montage.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "first-episode psychosis"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "cortical networks"
-    },
-    {
-      "term": "schizophrenia spectrum"
-    },
-    {
-      "term": "alpha oscillations"
-    },
-    {
-      "term": "clinical assessment"
-    },
-    {
-      "term": "healthy controls"
-    },
-    {
-      "term": "neurophysiology"
-    }
-  ],
-  "source_hash": "8aff6e2dd73c38088d9ed7d8a40c7d288378e62a8d6121e85a9d1b017106ab05"
+  "source_hash": "640ec33103d47cb7534ced038e9d627be628140d913bfa10188c9c8640ba9c4f"
 }
