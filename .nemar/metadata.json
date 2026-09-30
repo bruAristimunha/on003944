@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG: First Episode Psychosis vs. Control Resting Task 1",
-  "description": "This dataset comprises resting-state EEG recordings from individuals with first-episode psychosis (FEP) and healthy controls, collected using a 60-channel 10-10 system montage. The first of two independently collected samples, it includes 5-minute resting EEG acquisitions obtained with an Elekta Neuromag Vectorview system. Comprehensive clinical assessments are provided, including psychiatric rating scales (BPRS, SANS, SAPS), cognitive batteries (MATRICS, WASI), and functional measures (GAF, SFS), enabling investigation of neurophysiological abnormalities in early psychosis.",
-  "methods_description": "Resting-state EEG was recorded for 5 minutes using an Elekta Neuromag Vectorview system with a low-impedance 60-channel 10-10 system electrode cap. Clinical assessments included Brief Psychiatric Rating Scale (BPRS), Scale for Assessment of Negative Symptoms (SANS), Scale for Assessment of Positive Symptoms (SAPS), Global Assessment of Functioning (GAF), Social Functioning Scale (SFS), MATRICS Consensus Cognitive Battery, Wechsler Abbreviated Scale of Intelligence (WASI), Hollingshead Four-Factor Index of Socioeconomic Status, and medication chlorpromazine equivalency.",
+  "description": "Resting-state EEG recordings from healthy controls and individuals with first episode psychosis (FEP), representing the first of two independently collected samples. The dataset includes 5-minute resting recordings with a 60-channel 10-10 cap, plus phenotype data covering clinical, cognitive, and socioeconomic assessments. It supports investigation of resting-state cortical abnormalities in the early schizophrenia spectrum.",
+  "methods_description": "Resting EEG was recorded for 5 minutes using an Elekta Neuromag Vectorview system with a low-impedance 60-channel 10-10 system cap. Clinical assessments included BPRS, SANS, SAPS, GAF/GAS, SFS, MATRICS, WASI, Hollingshead index, and chlorpromazine-equivalent medication doses.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,19 +16,23 @@
       "term": "EEG"
     },
     {
-      "term": "first-episode psychosis"
+      "term": "resting state"
     },
     {
-      "term": "resting-state"
+      "term": "first episode psychosis"
     },
     {
-      "term": "schizophrenia spectrum"
+      "term": "Schizophrenia",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012559"
     },
     {
-      "term": "cortical networks"
+      "term": "Psychotic Disorders",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D011618"
     },
     {
-      "term": "clinical neurophysiology"
+      "term": "clinical assessment"
     }
   ],
   "related_identifiers": [
@@ -38,19 +42,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003944",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1016/j.bpsc.2020.07.013",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003944.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003944",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -58,7 +57,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.6 GB (165 files)"
+    "6.15 GB (165 files)"
   ],
   "formats": [
     ".eeg",
