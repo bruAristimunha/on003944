@@ -28,7 +28,8 @@
       "Black": "Black or African American",
       "White": "White",
       "Mixed": "Multiracial",
-      "Undislcosed": "Undisclosed"
+      "Undislcosed": "Undisclosed",
+      "Undisclosed": "Undisclosed"
     }
   },
   "ethnicity": {
